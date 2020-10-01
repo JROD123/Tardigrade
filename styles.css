@@ -1,0 +1,160 @@
+body {
+  background-color: rgb(41, 41, 41) !important;
+}
+
+.row {
+  display: block !important;
+  padding: 20px;
+}
+
+.Header-row .Header {
+  font-family: "Open Sans";
+  color: white !important;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 3.5px;
+  display: block;
+}
+
+.Header-row .Header::after {
+  content: "";
+  height: 3.5px;
+  width: 54%;
+  left: 105px;
+  bottom: 340px;
+  background: darkorange;
+  position: absolute;
+}
+
+.col-md-6 .Header-row {
+  text-align: center;
+}
+
+.CenterSVG {
+  display: none;
+}
+
+#HeaderSVG {
+  display: inline-block;
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 100;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-align: left;
+  padding-top: 42px;
+  line-height: 37px;
+}
+
+.TarPar1 {
+  padding-top: 70px;
+}
+
+.TarPar2 {
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+model-viewer {
+  width: 100%;
+  background-color: darkorange;
+  border-radius: 12px;
+  height: 274px;
+  border: 0px solid rgb(0, 0, 0);
+}
+
+.container-fluid {
+  max-width: 70em;
+  margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+    .TarPar1{
+        padding-top: 40px;
+    }
+
+@media (max-width: 991px) {
+  .Header {
+    display: none;
+  }
+
+  .CenterSVG {
+    display: inline-block;
+    text-align: center;
+  }
+
+  #HeaderSVG {
+    display: inline-block;
+  }
+
+  model-viewer {
+    margin-top: 20px;
+  }
+
+  p {
+    padding-top: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+
+  .container-fluid {
+    max-width: 90%;
+  }
+
+  .TarPar2 {
+    padding-top: 0px;
+  }
+
+  .TarPar1 {
+    padding-bottom: -10px;
+  }
+
+  .TarPar1-row {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 414px) {
+  .row {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 411px) {
+  .row {
+    padding: 0px;
+  }
+
+  p {
+    line-height: 44px;
+    letter-spacing: 3.5px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  model-viewer {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .row {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  p {
+    line-height: 40px;
+  }
+}
